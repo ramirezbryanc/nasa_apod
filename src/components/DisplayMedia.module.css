@@ -1,0 +1,12 @@
+.display-media{
+    
+    img {
+        max-width: 640px;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
