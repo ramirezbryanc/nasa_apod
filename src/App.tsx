@@ -46,8 +46,8 @@ function App() {
   return (
     <>
       <h1>Astronomy Pictures by NASA</h1>
-      <p>View the daily photos from NASA's APOD API.</p>
-      <p>You can also choose to view a photo from a previous date, or several photos from a date range.</p>
+      <p>View today's Astronomy Photo from NASA's APOD API.</p>
+      <p>OR</p>
       <ChooseDate fetchData={fetchData}/>
       <DisplayMedia {...data}/>
     </>

@@ -9,13 +9,14 @@ const ChooseDate: React.FC<ChooseDateProps> = ({ fetchData }) => {
     const [date, setDate] = React.useState<string>('');
 
     const handleDateChange = (event:ChangeEvent<HTMLInputElement>) => {
-        setDate(event.target.value);
-        fetchData(date);
+        const selectedDate = event.target.value;
+        setDate(selectedDate);
+        fetchData(selectedDate);
     };
     
     return(
         <>
-        <label htmlFor="datePicker">Select a date:</label>
+        <label htmlFor="datePicker">View a specific photo by date: </label>
         <input 
             type="date" 
             id="datePicker" 
